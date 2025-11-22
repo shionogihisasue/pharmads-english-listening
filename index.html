@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaDS English Listening Tool</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎧 Pharmaceutical Data Science English Listening</h1>
+            <p class="subtitle">Improve your technical English for global collaboration</p>
+        </header>
+
+        <main>
+            <!-- Lesson Selector -->
+            <section class="lesson-selector">
+                <h2>Select a Lesson</h2>
+                <div id="lessonList" class="lesson-grid"></div>
+            </section>
+
+            <!-- Audio Player Section -->
+            <section class="player-section" id="playerSection" style="display: none;">
+                <div class="lesson-info">
+                    <h2 id="lessonTitle"></h2>
+                    <span class="lesson-badge" id="lessonLevel"></span>
+                    <span class="lesson-badge" id="lessonCategory"></span>
+                </div>
+
+                <!-- Transcript Display -->
+                <div class="transcript-container">
+                    <h3>Transcript</h3>
+                    <p id="transcriptText" class="transcript"></p>
+                </div>
+
+                <!-- Audio Controls -->
+                <div class="audio-controls">
+                    <audio id="audioPlayer" preload="auto"></audio>
+                    
+                    <div class="playback-controls">
+                        <button id="playPauseBtn" class="control-btn primary">
+                            <span class="icon">▶</span> Play
+                        </button>
+                        <button id="replayBtn" class="control-btn">
+                            <span class="icon">↻</span> Replay
+                        </button>
+                        <button id="backBtn" class="control-btn">-5s</button>
+                        <button id="forwardBtn" class="control-btn">+5s</button>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="progress-container">
+                        <div class="time-display">
+                            <span id="currentTime">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+                        <input type="range" id="progressBar" class="progress-bar" value="0" min="0" max="100" step="0.1">
+                    </div>
+
+                    <!-- Speed Control -->
+                    <div class="speed-control">
+                        <label for="speedSelect">Playback Speed:</label>
+                        <select id="speedSelect" class="speed-select">
+                            <option value="0.75">0.75x</option>
+                            <option value="1" selected>1x (Normal)</option>
+                            <option value="1.25">1.25x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="1.75">1.75x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Vocabulary List -->
+                <div class="vocabulary-section">
+                    <h3>Key Vocabulary</h3>
+                    <div id="vocabularyList" class="vocabulary-grid"></div>
+                </div>
+
+                <button id="backToListBtn" class="back-btn">← Back to Lesson List</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Built for Shionogi Data Science Team | Open Source Project</p>
+        </footer>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
