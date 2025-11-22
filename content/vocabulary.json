@@ -199,6 +199,46 @@
       "definition": "Statistically significant trends, correlations, or relationships discovered through data analysis that provide actionable insights for decision-making in drug development, patient care, or business operations.",
       "example": "The data scientists identified meaningful patterns showing that patients with certain genetic markers responded better to the treatment.",
       "category": "Data Analysis"
-    }
+    },
+    {
+      "id": 26,
+      "lessonId": 6,
+      "term": "Artificial Intelligence",
+      "definition": "The simulation of human intelligence processes by machines, especially computer systems, including learning, reasoning, and self-correction.",
+      "example": "Artificial Intelligence is being used to predict drug interactions and optimize clinical trial designs in pharmaceutical research.",
+      "category": "AI/ML"
+    },
+    {
+      "id": 27,
+      "lessonId": 6,
+      "term": "Deep Learning",
+      "definition": "A subset of machine learning based on artificial neural networks with multiple layers, capable of learning complex patterns from large amounts of data.",
+      "example": "Deep Learning models can analyze molecular structures to identify potential drug candidates with high accuracy.",
+      "category": "AI/ML"
+    },
+    {
+      "id": 28,
+      "lessonId": 6,
+      "term": "Natural Language Processing",
+      "definition": "A branch of artificial intelligence that helps computers understand, interpret, and generate human language in a valuable way.",
+      "example": "Natural Language Processing is used to extract relevant information from thousands of research papers to support drug development.",
+      "category": "AI/ML"
+    },
+    {
+      "id": 29,
+      "lessonId": 6,
+      "term": "Computer Vision",
+      "definition": "A field of artificial intelligence that enables computers to derive meaningful information from digital images, videos, and other visual inputs.",
+      "example": "Computer Vision techniques help analyze medical imaging data to identify patterns in patient responses during clinical trials.",
+      "category": "AI/ML"
+    },
+    {
+      "id": 30,
+      "lessonId": 6,
+      "term": "drug discovery process",
+      "definition": "The comprehensive series of steps and methodologies used to identify and develop new pharmaceutical compounds, from initial research through clinical trials to regulatory approval.",
+      "example": "The drug discovery process has been accelerated by decades through the application of artificial intelligence and machine learning technologies.",
+      "category": "R&D"
+    }  
   ]
 }
