@@ -1,0 +1,204 @@
+{
+  "vocabulary": [
+    {
+      "id": 1,
+      "lessonId": 1,
+      "term": "Master Data Management",
+      "definition": "A comprehensive method of enabling an organization to link all of its critical data to a single point of reference, ensuring data accuracy, consistency, and accountability across the enterprise.",
+      "example": "Shionogi implemented Master Data Management to ensure that patient information remains consistent across all clinical trial sites and regulatory submissions.",
+      "category": "MDM"
+    },
+    {
+      "id": 2,
+      "lessonId": 1,
+      "term": "consolidates",
+      "definition": "To combine multiple sources or pieces of information into a single, unified system or dataset, making it easier to manage and analyze.",
+      "example": "The new data platform consolidates information from fifteen different legacy systems into one centralized repository.",
+      "category": "General"
+    },
+    {
+      "id": 3,
+      "lessonId": 1,
+      "term": "consistency",
+      "definition": "The quality of having the same standards, values, or definitions across different systems, departments, or time periods, ensuring reliability and accuracy of data.",
+      "example": "Data consistency is crucial when multiple research teams need to access the same patient records during international clinical trials.",
+      "category": "Data Quality"
+    },
+    {
+      "id": 4,
+      "lessonId": 1,
+      "term": "regulatory submissions",
+      "definition": "Formal documents and data packages submitted to regulatory authorities such as FDA or EMA to obtain approval for drugs, medical devices, or clinical trials.",
+      "example": "The team spent six months preparing regulatory submissions for the new cardiovascular drug candidate.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 5,
+      "lessonId": 1,
+      "term": "multi-domain",
+      "definition": "Pertaining to systems or platforms that manage multiple types of master data such as customer, product, supplier, and location data within a single integrated solution.",
+      "example": "Our multi-domain MDM platform manages product data, supplier information, and location hierarchies simultaneously.",
+      "category": "MDM"
+    },
+    {
+      "id": 6,
+      "lessonId": 2,
+      "term": "cloud-enabled",
+      "definition": "Technology or software designed to operate on cloud computing infrastructure, allowing remote access, scalability, and reduced need for on-premises hardware.",
+      "example": "The cloud-enabled analytics platform allows our global research teams to collaborate on data analysis from any location.",
+      "category": "Cloud Computing"
+    },
+    {
+      "id": 7,
+      "lessonId": 2,
+      "term": "semi-automate",
+      "definition": "To automate certain aspects of a process while still requiring human oversight, decision-making, or intervention for critical steps, balancing efficiency with quality control.",
+      "example": "We decided to semi-automate the safety review process, keeping human experts involved in flagging serious adverse events.",
+      "category": "Automation"
+    },
+    {
+      "id": 8,
+      "lessonId": 2,
+      "term": "clinical trial analysis",
+      "definition": "The systematic evaluation of data collected during clinical trials to assess the safety, efficacy, and statistical significance of investigational drugs or treatments.",
+      "example": "Clinical trial analysis revealed that the experimental treatment showed a statistically significant improvement in patient outcomes.",
+      "category": "Clinical Research"
+    },
+    {
+      "id": 9,
+      "lessonId": 2,
+      "term": "regulatory compliance",
+      "definition": "Adherence to laws, regulations, guidelines, and specifications relevant to pharmaceutical operations, ensuring that all processes meet the standards set by regulatory authorities.",
+      "example": "Maintaining regulatory compliance requires detailed documentation of all data processing steps and algorithm validations.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 10,
+      "lessonId": 2,
+      "term": "machine learning",
+      "definition": "A subset of artificial intelligence that enables computer systems to learn from data, identify patterns, and make decisions with minimal human intervention.",
+      "example": "Machine learning algorithms can predict which patients are most likely to respond positively to a particular treatment.",
+      "category": "AI/ML"
+    },
+    {
+      "id": 11,
+      "lessonId": 3,
+      "term": "cloud-native",
+      "definition": "Software or applications specifically designed and built to take full advantage of cloud computing frameworks, rather than being adapted from traditional on-premises systems.",
+      "example": "Unlike our legacy systems, this cloud-native application was built from the ground up to leverage elastic scalability and distributed processing.",
+      "category": "Cloud Computing"
+    },
+    {
+      "id": 12,
+      "lessonId": 3,
+      "term": "separates compute from storage",
+      "definition": "An architectural approach where data storage and computational processing are independent resources that can be scaled separately, optimizing performance and cost.",
+      "example": "Because Snowflake separates compute from storage, we can increase processing power during peak analysis periods without paying for additional storage.",
+      "category": "Data Architecture"
+    },
+    {
+      "id": 13,
+      "lessonId": 3,
+      "term": "scalability",
+      "definition": "The ability of a system to handle increased workload or data volume by adding resources, either by scaling up with more powerful hardware or scaling out with more instances.",
+      "example": "The platform's scalability allowed us to handle a ten-fold increase in data volume without performance degradation.",
+      "category": "Data Architecture"
+    },
+    {
+      "id": 14,
+      "lessonId": 3,
+      "term": "real-world data",
+      "definition": "Data collected from sources outside traditional clinical trials, including electronic health records, insurance claims, patient registries, and wearable devices, reflecting actual clinical practice.",
+      "example": "Analyzing real-world data from electronic health records helped us understand how patients use the medication in everyday practice.",
+      "category": "Clinical Data"
+    },
+    {
+      "id": 15,
+      "lessonId": 3,
+      "term": "clinical trial datasets",
+      "definition": "Structured collections of data gathered during clinical studies, including patient demographics, treatment information, efficacy measurements, and adverse events, formatted according to industry standards like CDISC.",
+      "example": "The clinical trial datasets must be submitted in SDTM format to meet FDA requirements for regulatory review.",
+      "category": "Clinical Data"
+    },
+    {
+      "id": 16,
+      "lessonId": 4,
+      "term": "Good Practice guidelines",
+      "definition": "A collection of quality assurance principles and regulations such as GCP, GLP, and GMP that govern pharmaceutical operations to ensure product safety, efficacy, and quality throughout development and manufacturing.",
+      "example": "All staff members must complete training on Good Practice guidelines before working with regulated data systems.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 17,
+      "lessonId": 4,
+      "term": "Computer System Validation",
+      "definition": "A documented process that provides evidence that a computerized system consistently performs according to predetermined specifications and quality attributes, meeting regulatory requirements for pharmaceutical use.",
+      "example": "Before deploying the new analytics platform, we must complete Computer System Validation to demonstrate it meets GxP requirements.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 18,
+      "lessonId": 4,
+      "term": "data governance",
+      "definition": "The overall management framework for ensuring data quality, security, privacy, and compliance, including policies, procedures, roles, and responsibilities for data throughout its lifecycle.",
+      "example": "Our data governance framework defines who can access sensitive patient information and under what circumstances.",
+      "category": "Data Management"
+    },
+    {
+      "id": 19,
+      "lessonId": 4,
+      "term": "audit trails",
+      "definition": "Secure, computer-generated records that chronologically document all system activities, data changes, and user actions, providing traceability and accountability for regulatory compliance.",
+      "example": "The audit trails showed exactly when and by whom each data record was modified during the clinical trial.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 20,
+      "lessonId": 4,
+      "term": "electronic signature",
+      "definition": "A legally binding digital equivalent of a handwritten signature that authenticates the identity of the signer and their approval of electronic records, meeting 21 CFR Part 11 requirements.",
+      "example": "The principal investigator used her electronic signature to approve the final clinical study report.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 21,
+      "lessonId": 5,
+      "term": "Real-world data",
+      "definition": "Data relating to patient health status and healthcare delivery collected from sources outside conventional randomized controlled trials, reflecting routine clinical practice and diverse patient populations.",
+      "example": "Real-world data from insurance claims revealed that elderly patients were using the medication differently than anticipated in clinical trials.",
+      "category": "Clinical Data"
+    },
+    {
+      "id": 22,
+      "lessonId": 5,
+      "term": "Real-world evidence",
+      "definition": "Clinical evidence derived from analysis and synthesis of real-world data, used to inform healthcare decisions about the usage, benefits, and risks of medical products in actual practice settings.",
+      "example": "The FDA requested Real-world evidence to support the expanded indication for use in pediatric populations.",
+      "category": "Clinical Data"
+    },
+    {
+      "id": 23,
+      "lessonId": 5,
+      "term": "electronic health records",
+      "definition": "Digital versions of patients' medical histories maintained by healthcare providers, containing comprehensive information about diagnoses, medications, treatment plans, immunizations, allergies, and test results.",
+      "example": "We analyzed electronic health records from fifty hospitals to identify patterns in adverse drug reactions.",
+      "category": "Clinical Data"
+    },
+    {
+      "id": 24,
+      "lessonId": 5,
+      "term": "post-market surveillance",
+      "definition": "The ongoing monitoring of a drug or medical device's safety and effectiveness after it has been approved and marketed, identifying rare adverse events and long-term effects not detected in clinical trials.",
+      "example": "Post-market surveillance detected a rare but serious side effect that occurred in only one in ten thousand patients.",
+      "category": "Regulatory"
+    },
+    {
+      "id": 25,
+      "lessonId": 5,
+      "term": "meaningful patterns",
+      "definition": "Statistically significant trends, correlations, or relationships discovered through data analysis that provide actionable insights for decision-making in drug development, patient care, or business operations.",
+      "example": "The data scientists identified meaningful patterns showing that patients with certain genetic markers responded better to the treatment.",
+      "category": "Data Analysis"
+    }
+  ]
+}

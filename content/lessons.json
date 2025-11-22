@@ -1,0 +1,49 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Introduction to Master Data Management",
+      "level": "beginner",
+      "category": "MDM",
+      "audioFile": "lesson1.mp3",
+      "text": "Master Data Management, or MDM, is a technology-enabled discipline that consolidates critical business data from multiple sources. In pharmaceutical companies like Shionogi, MDM ensures consistency of product, organization, and patient data across clinical trials, manufacturing, and regulatory submissions. Stibo Systems provides a multi-domain MDM platform that enables integrated management of various master data types.",
+      "vocabularyIds": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": 2,
+      "title": "SAS Viya for Clinical Trial Automation",
+      "level": "intermediate",
+      "category": "Analytics Platform",
+      "audioFile": "lesson2.mp3",
+      "text": "SAS Viya is a cloud-enabled, AI-driven analytics platform widely used in pharmaceutical research. Shionogi developed an innovative AI-SAS system using SAS Viya to semi-automate clinical trial analysis. This system reduces standard analysis time by thirty percent, from three hundred fifty hours per trial. The platform seamlessly integrates Python and SAS programming, allowing researchers to leverage machine learning capabilities while maintaining regulatory compliance.",
+      "vocabularyIds": [6, 7, 8, 9, 10]
+    },
+    {
+      "id": 3,
+      "title": "Snowflake Data Warehouse Architecture",
+      "level": "intermediate",
+      "category": "Data Warehouse",
+      "audioFile": "lesson3.mp3",
+      "text": "Snowflake is a cloud-native data warehouse platform adopted by many life sciences organizations. Its unique architecture separates compute from storage, providing scalability and cost efficiency. In pharmaceutical data management, Snowflake enables seamless integration with MDM systems and analytics platforms. The platform supports handling large volumes of real-world data, clinical trial datasets, and regulatory documentation simultaneously.",
+      "vocabularyIds": [11, 12, 13, 14, 15]
+    },
+    {
+      "id": 4,
+      "title": "GxP Compliance in Data Management",
+      "level": "advanced",
+      "category": "Regulatory",
+      "audioFile": "lesson4.mp3",
+      "text": "GxP refers to Good Practice guidelines that ensure pharmaceutical products are safe, effective, and high quality. This includes Good Clinical Practice, Good Laboratory Practice, and Good Manufacturing Practice. Data systems used in GxP environments must undergo Computer System Validation, or CSV, to demonstrate they perform consistently and accurately. Maintaining GxP compliance requires robust data governance, audit trails, and electronic signature capabilities throughout the data lifecycle.",
+      "vocabularyIds": [16, 17, 18, 19, 20]
+    },
+    {
+      "id": 5,
+      "title": "Real-World Data and Evidence",
+      "level": "intermediate",
+      "category": "Clinical Data",
+      "audioFile": "lesson5.mp3",
+      "text": "Real-world data, abbreviated as RWD, refers to data collected outside traditional clinical trials, such as electronic health records, insurance claims, and patient registries. Real-world evidence, or RWE, is the clinical insight derived from analyzing RWD. Pharmaceutical companies increasingly leverage RWD and RWE to support drug development, regulatory submissions, and post-market surveillance. Advanced analytics platforms enable researchers to extract meaningful patterns from vast amounts of real-world data.",
+      "vocabularyIds": [21, 22, 23, 24, 25]
+    }
+  ]
+}

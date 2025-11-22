@@ -3,24 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PharmaDS English Listening Tool</title>
+    <title>PharmaDS English Learning Tool</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>🎧 Pharmaceutical Data Science English Listening</h1>
+            <h1>🎧 Pharmaceutical Data Science English Learning</h1>
             <p class="subtitle">Improve your technical English for global collaboration</p>
         </header>
 
         <main>
-            <!-- Lesson Selector -->
-            <section class="lesson-selector">
-                <h2>Select a Lesson</h2>
+            <!-- Mode Selection Screen -->
+            <section class="mode-selector" id="modeSelector">
+                <h2>Choose Your Learning Mode</h2>
+                <div class="mode-grid">
+                    <div class="mode-card" id="listeningModeBtn">
+                        <div class="mode-icon">🎧</div>
+                        <h3>Listening Practice</h3>
+                        <p>Listen to lessons about pharmaceutical data science topics with adjustable speed and repeat functions.</p>
+                        <div class="mode-features">
+                            <span>✓ Full audio lessons</span>
+                            <span>✓ Speed control (0.75x-2x)</span>
+                            <span>✓ Loop & section repeat</span>
+                        </div>
+                    </div>
+
+                    <div class="mode-card" id="vocabModeBtn">
+                        <div class="mode-icon">📚</div>
+                        <h3>Vocabulary Flashcards</h3>
+                        <p>Master technical vocabulary with interactive flashcards featuring definitions, examples, and audio pronunciation.</p>
+                        <div class="mode-features">
+                            <span>✓ Interactive flashcards</span>
+                            <span>✓ Audio pronunciation</span>
+                            <span>✓ Example sentences</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lesson Selector (for Listening Mode) -->
+            <section class="lesson-selector" id="lessonSelector" style="display: none;">
+                <div class="back-to-mode">
+                    <button id="backToModeBtn" class="back-btn">← Back to Mode Selection</button>
+                </div>
+                <h2>Select a Listening Lesson</h2>
                 <div id="lessonList" class="lesson-grid"></div>
             </section>
 
-            <!-- Audio Player Section -->
+            <!-- Vocabulary Lesson Selector (for Flashcard Mode) -->
+            <section class="vocab-lesson-selector" id="vocabLessonSelector" style="display: none;">
+                <div class="back-to-mode">
+                    <button id="backToModeFromVocabBtn" class="back-btn">← Back to Mode Selection</button>
+                </div>
+                <h2>Select a Vocabulary Set</h2>
+                <div id="vocabLessonList" class="lesson-grid"></div>
+            </section>
+
+            <!-- Audio Player Section (Listening Mode) -->
             <section class="player-section" id="playerSection" style="display: none;">
                 <div class="lesson-info">
                     <h2 id="lessonTitle"></h2>
@@ -28,13 +68,11 @@
                     <span class="lesson-badge" id="lessonCategory"></span>
                 </div>
 
-                <!-- Transcript Display -->
                 <div class="transcript-container">
                     <h3>Transcript</h3>
                     <p id="transcriptText" class="transcript"></p>
                 </div>
 
-                <!-- Audio Controls -->
                 <div class="audio-controls">
                     <audio id="audioPlayer" preload="auto"></audio>
                     
@@ -52,7 +90,6 @@
                         <button id="forwardBtn" class="control-btn">+5s</button>
                     </div>
 
-                    <!-- Progress Bar -->
                     <div class="progress-container">
                         <div class="time-display">
                             <span id="currentTime">0:00</span>
@@ -61,7 +98,6 @@
                         <input type="range" id="progressBar" class="progress-bar" value="0" min="0" max="100" step="0.1">
                     </div>
 
-                    <!-- Speed Control -->
                     <div class="speed-control">
                         <label for="speedSelect">Playback Speed:</label>
                         <select id="speedSelect" class="speed-select">
@@ -74,7 +110,6 @@
                         </select>
                     </div>
 
-                    <!-- Section Repeat Controls (NEW) -->
                     <div class="section-repeat-controls">
                         <h4>Section Repeat</h4>
                         <div class="section-repeat-buttons">
@@ -95,13 +130,60 @@
                     </div>
                 </div>
 
-                <!-- Vocabulary List -->
                 <div class="vocabulary-section">
                     <h3>Key Vocabulary</h3>
                     <div id="vocabularyList" class="vocabulary-grid"></div>
                 </div>
 
                 <button id="backToListBtn" class="back-btn">← Back to Lesson List</button>
+            </section>
+
+            <!-- Flashcard Section (Vocabulary Mode) -->
+            <section class="flashcard-section" id="flashcardSection" style="display: none;">
+                <div class="flashcard-header">
+                    <h2 id="flashcardLessonTitle"></h2>
+                    <div class="flashcard-progress">
+                        <span id="cardCounter">1 / 5</span>
+                    </div>
+                </div>
+
+                <div class="flashcard-container">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-front" id="flashcardFront">
+                            <div class="card-label">Term</div>
+                            <div class="card-term" id="cardTerm">Master Data Management</div>
+                            <button class="audio-btn" id="termAudioBtn" title="Play audio">🔊</button>
+                            <div class="card-hint">Click card to reveal definition & example</div>
+                        </div>
+
+                        <div class="flashcard-back" id="flashcardBack" style="display: none;">
+                            <div class="card-label">Definition</div>
+                            <div class="card-definition" id="cardDefinition"></div>
+                            
+                            <div class="card-label" style="margin-top: 20px;">Example Sentence</div>
+                            <div class="card-example" id="cardExample"></div>
+                            
+                            <button class="audio-btn" id="definitionAudioBtn" title="Play definition">🔊 Definition</button>
+                            <button class="audio-btn" id="exampleAudioBtn" title="Play example" style="margin-left: 10px;">🔊 Example</button>
+                            
+                            <div class="card-hint">Click card to show term again</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flashcard-controls">
+                    <button id="prevCardBtn" class="control-btn">
+                        <span class="icon">←</span> Previous
+                    </button>
+                    <button id="shuffleBtn" class="control-btn secondary">
+                        <span class="icon">🔀</span> Shuffle
+                    </button>
+                    <button id="nextCardBtn" class="control-btn primary">
+                        Next <span class="icon">→</span>
+                    </button>
+                </div>
+
+                <button id="backToVocabListBtn" class="back-btn">← Back to Vocabulary Sets</button>
             </section>
         </main>
 
