@@ -9,6 +9,7 @@
     --primary-color: #2563eb;
     --secondary-color: #3b82f6;
     --success-color: #10b981;
+    --active-color: #059669;
     --background: #f8fafc;
     --card-bg: #ffffff;
     --text-primary: #1e293b;
@@ -187,6 +188,16 @@ header h1 {
     background: var(--background);
 }
 
+.control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.control-btn:disabled:hover {
+    border-color: var(--border-color);
+    background: white;
+}
+
 .control-btn.primary {
     background: var(--primary-color);
     color: white;
@@ -195,6 +206,22 @@ header h1 {
 
 .control-btn.primary:hover {
     background: var(--secondary-color);
+}
+
+.control-btn.secondary {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
+
+.control-btn.active {
+    background: var(--success-color);
+    color: white;
+    border-color: var(--success-color);
+}
+
+.control-btn.active:hover {
+    background: var(--active-color);
+    border-color: var(--active-color);
 }
 
 .control-btn .icon {
@@ -249,6 +276,7 @@ header h1 {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-bottom: 24px;
 }
 
 .speed-control label {
@@ -268,6 +296,43 @@ header h1 {
 
 .speed-select:focus {
     border-color: var(--primary-color);
+}
+
+/* Section Repeat Controls */
+.section-repeat-controls {
+    padding-top: 24px;
+    border-top: 2px solid var(--border-color);
+    margin-top: 24px;
+}
+
+.section-repeat-controls h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.section-repeat-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.section-info {
+    background: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.section-info p {
+    margin: 0;
+}
+
+.section-info strong {
+    color: var(--text-primary);
 }
 
 /* Vocabulary Section */
@@ -347,6 +412,14 @@ footer {
         width: 100%;
         justify-content: center;
     }
+    
+    .section-repeat-buttons {
+        flex-direction: column;
+    }
+    
+    .section-repeat-buttons .control-btn {
+        width: 100%;
+    }
 }
 
 /* Dark Mode Support */
@@ -357,5 +430,14 @@ footer {
         --text-primary: #f1f5f9;
         --text-secondary: #94a3b8;
         --border-color: #334155;
+    }
+    
+    .control-btn {
+        background: var(--card-bg);
+    }
+    
+    .speed-select,
+    .section-info {
+        background: var(--card-bg);
     }
 }

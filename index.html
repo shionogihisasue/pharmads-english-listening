@@ -45,6 +45,9 @@
                         <button id="replayBtn" class="control-btn">
                             <span class="icon">↻</span> Replay
                         </button>
+                        <button id="loopBtn" class="control-btn" title="Loop playback">
+                            <span class="icon">🔁</span> Loop: Off
+                        </button>
                         <button id="backBtn" class="control-btn">-5s</button>
                         <button id="forwardBtn" class="control-btn">+5s</button>
                     </div>
@@ -69,6 +72,26 @@
                             <option value="1.75">1.75x</option>
                             <option value="2">2x</option>
                         </select>
+                    </div>
+
+                    <!-- Section Repeat Controls (NEW) -->
+                    <div class="section-repeat-controls">
+                        <h4>Section Repeat</h4>
+                        <div class="section-repeat-buttons">
+                            <button id="setStartBtn" class="control-btn secondary">
+                                <span class="icon">📍</span> Set Start
+                            </button>
+                            <button id="setEndBtn" class="control-btn secondary">
+                                <span class="icon">🏁</span> Set End
+                            </button>
+                            <button id="repeatSectionBtn" class="control-btn secondary" disabled>
+                                <span class="icon">🔂</span> Repeat Section
+                            </button>
+                            <button id="clearSectionBtn" class="control-btn secondary" disabled>
+                                <span class="icon">✖</span> Clear
+                            </button>
+                        </div>
+                        <div id="sectionInfo" class="section-info"></div>
                     </div>
                 </div>
 
