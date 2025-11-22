@@ -83,14 +83,26 @@ function loadLesson(lessonId) {
     document.getElementById('lessonCategory').textContent = currentLesson.category;
     document.getElementById('transcriptText').textContent = currentLesson.text;
     
-    // Render Vocabulary
+    // Render Vocabulary with Definitions
     const vocabList = document.getElementById('vocabularyList');
     vocabList.innerHTML = '';
-    currentLesson.vocabulary.forEach(word => {
-        const tag = document.createElement('span');
-        tag.className = 'vocab-tag';
-        tag.textContent = word;
-        vocabList.appendChild(tag);
+    currentLesson.vocabulary.forEach(vocabItem => {
+        const card = document.createElement('div');
+        card.className = 'vocab-card';
+        
+        // Support both old format (string) and new format (object)
+        if (typeof vocabItem === 'string') {
+            card.innerHTML = `
+                <div class="vocab-term">${vocabItem}</div>
+            `;
+        } else {
+            card.innerHTML = `
+                <div class="vocab-term">${vocabItem.term}</div>
+                <div class="vocab-definition">${vocabItem.definition}</div>
+            `;
+        }
+        
+        vocabList.appendChild(card);
     });
     
     // Load Audio

@@ -350,11 +350,40 @@ header h1 {
 }
 
 .vocabulary-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
 }
 
+/* Vocabulary Card (NEW) */
+.vocab-card {
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.3s ease;
+}
+
+.vocab-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    transform: translateY(-2px);
+}
+
+.vocab-term {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.vocab-definition {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Old vocab tag style (for backward compatibility) */
 .vocab-tag {
     padding: 8px 16px;
     background: white;
@@ -420,6 +449,10 @@ footer {
     .section-repeat-buttons .control-btn {
         width: 100%;
     }
+    
+    .vocabulary-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Dark Mode Support */
@@ -437,7 +470,8 @@ footer {
     }
     
     .speed-select,
-    .section-info {
+    .section-info,
+    .vocab-card {
         background: var(--card-bg);
     }
 }

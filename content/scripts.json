@@ -6,7 +6,28 @@
       "level": "beginner",
       "category": "MDM",
       "text": "Master Data Management, or MDM, is a technology-enabled discipline that consolidates critical business data from multiple sources. In pharmaceutical companies like Shionogi, MDM ensures consistency of product, organization, and patient data across clinical trials, manufacturing, and regulatory submissions. Stibo Systems provides a multi-domain MDM platform that enables integrated management of various master data types.",
-      "vocabulary": ["Master Data Management", "consolidates", "consistency", "regulatory submissions", "multi-domain"]
+      "vocabulary": [
+        {
+          "term": "Master Data Management",
+          "definition": "A comprehensive method of enabling an organization to link all of its critical data to a single point of reference, ensuring data accuracy, consistency, and accountability across the enterprise."
+        },
+        {
+          "term": "consolidates",
+          "definition": "To combine multiple sources or pieces of information into a single, unified system or dataset, making it easier to manage and analyze."
+        },
+        {
+          "term": "consistency",
+          "definition": "The quality of having the same standards, values, or definitions across different systems, departments, or time periods, ensuring reliability and accuracy of data."
+        },
+        {
+          "term": "regulatory submissions",
+          "definition": "Formal documents and data packages submitted to regulatory authorities (such as FDA or EMA) to obtain approval for drugs, medical devices, or clinical trials."
+        },
+        {
+          "term": "multi-domain",
+          "definition": "Pertaining to systems or platforms that manage multiple types of master data (such as customer, product, supplier, and location data) within a single integrated solution."
+        }
+      ]
     },
     {
       "id": 2,
@@ -14,7 +35,28 @@
       "level": "intermediate",
       "category": "Analytics Platform",
       "text": "SAS Viya is a cloud-enabled, AI-driven analytics platform widely used in pharmaceutical research. Shionogi developed an innovative AI-SAS system using SAS Viya to semi-automate clinical trial analysis. This system reduces standard analysis time by thirty percent, from three hundred fifty hours per trial. The platform seamlessly integrates Python and SAS programming, allowing researchers to leverage machine learning capabilities while maintaining regulatory compliance.",
-      "vocabulary": ["cloud-enabled", "semi-automate", "clinical trial analysis", "regulatory compliance", "machine learning"]
+      "vocabulary": [
+        {
+          "term": "cloud-enabled",
+          "definition": "Technology or software designed to operate on cloud computing infrastructure, allowing remote access, scalability, and reduced need for on-premises hardware."
+        },
+        {
+          "term": "semi-automate",
+          "definition": "To automate certain aspects of a process while still requiring human oversight, decision-making, or intervention for critical steps, balancing efficiency with quality control."
+        },
+        {
+          "term": "clinical trial analysis",
+          "definition": "The systematic evaluation of data collected during clinical trials to assess the safety, efficacy, and statistical significance of investigational drugs or treatments."
+        },
+        {
+          "term": "regulatory compliance",
+          "definition": "Adherence to laws, regulations, guidelines, and specifications relevant to pharmaceutical operations, ensuring that all processes meet the standards set by regulatory authorities."
+        },
+        {
+          "term": "machine learning",
+          "definition": "A subset of artificial intelligence that enables computer systems to learn from data, identify patterns, and make decisions with minimal human intervention."
+        }
+      ]
     },
     {
       "id": 3,
@@ -22,7 +64,28 @@
       "level": "intermediate",
       "category": "Data Warehouse",
       "text": "Snowflake is a cloud-native data warehouse platform adopted by many life sciences organizations. Its unique architecture separates compute from storage, providing scalability and cost efficiency. In pharmaceutical data management, Snowflake enables seamless integration with MDM systems and analytics platforms. The platform supports handling large volumes of real-world data, clinical trial datasets, and regulatory documentation simultaneously.",
-      "vocabulary": ["cloud-native", "separates compute from storage", "scalability", "real-world data", "clinical trial datasets"]
+      "vocabulary": [
+        {
+          "term": "cloud-native",
+          "definition": "Software or applications specifically designed and built to take full advantage of cloud computing frameworks, rather than being adapted from traditional on-premises systems."
+        },
+        {
+          "term": "separates compute from storage",
+          "definition": "An architectural approach where data storage and computational processing are independent resources that can be scaled separately, optimizing performance and cost."
+        },
+        {
+          "term": "scalability",
+          "definition": "The ability of a system to handle increased workload or data volume by adding resources, either by scaling up (more powerful hardware) or scaling out (more instances)."
+        },
+        {
+          "term": "real-world data",
+          "definition": "Data collected from sources outside traditional clinical trials, including electronic health records, insurance claims, patient registries, and wearable devices, reflecting actual clinical practice."
+        },
+        {
+          "term": "clinical trial datasets",
+          "definition": "Structured collections of data gathered during clinical studies, including patient demographics, treatment information, efficacy measurements, and adverse events, formatted according to industry standards like CDISC."
+        }
+      ]
     },
     {
       "id": 4,
@@ -30,7 +93,28 @@
       "level": "advanced",
       "category": "Regulatory",
       "text": "GxP refers to Good Practice guidelines that ensure pharmaceutical products are safe, effective, and high quality. This includes Good Clinical Practice, Good Laboratory Practice, and Good Manufacturing Practice. Data systems used in GxP environments must undergo Computer System Validation, or CSV, to demonstrate they perform consistently and accurately. Maintaining GxP compliance requires robust data governance, audit trails, and electronic signature capabilities throughout the data lifecycle.",
-      "vocabulary": ["Good Practice guidelines", "Computer System Validation", "data governance", "audit trails", "electronic signature"]
+      "vocabulary": [
+        {
+          "term": "Good Practice guidelines",
+          "definition": "A collection of quality assurance principles and regulations (such as GCP, GLP, GMP) that govern pharmaceutical operations to ensure product safety, efficacy, and quality throughout development and manufacturing."
+        },
+        {
+          "term": "Computer System Validation",
+          "definition": "A documented process that provides evidence that a computerized system consistently performs according to predetermined specifications and quality attributes, meeting regulatory requirements for pharmaceutical use."
+        },
+        {
+          "term": "data governance",
+          "definition": "The overall management framework for ensuring data quality, security, privacy, and compliance, including policies, procedures, roles, and responsibilities for data throughout its lifecycle."
+        },
+        {
+          "term": "audit trails",
+          "definition": "Secure, computer-generated records that chronologically document all system activities, data changes, and user actions, providing traceability and accountability for regulatory compliance."
+        },
+        {
+          "term": "electronic signature",
+          "definition": "A legally binding digital equivalent of a handwritten signature that authenticates the identity of the signer and their approval of electronic records, meeting 21 CFR Part 11 requirements."
+        }
+      ]
     },
     {
       "id": 5,
@@ -38,7 +122,28 @@
       "level": "intermediate",
       "category": "Clinical Data",
       "text": "Real-world data, abbreviated as RWD, refers to data collected outside traditional clinical trials, such as electronic health records, insurance claims, and patient registries. Real-world evidence, or RWE, is the clinical insight derived from analyzing RWD. Pharmaceutical companies increasingly leverage RWD and RWE to support drug development, regulatory submissions, and post-market surveillance. Advanced analytics platforms enable researchers to extract meaningful patterns from vast amounts of real-world data.",
-      "vocabulary": ["Real-world data", "Real-world evidence", "electronic health records", "post-market surveillance", "meaningful patterns"]
+      "vocabulary": [
+        {
+          "term": "Real-world data",
+          "definition": "Data relating to patient health status and healthcare delivery collected from sources outside conventional randomized controlled trials, reflecting routine clinical practice and diverse patient populations."
+        },
+        {
+          "term": "Real-world evidence",
+          "definition": "Clinical evidence derived from analysis and synthesis of real-world data, used to inform healthcare decisions about the usage, benefits, and risks of medical products in actual practice settings."
+        },
+        {
+          "term": "electronic health records",
+          "definition": "Digital versions of patients' medical histories maintained by healthcare providers, containing comprehensive information about diagnoses, medications, treatment plans, immunizations, allergies, and test results."
+        },
+        {
+          "term": "post-market surveillance",
+          "definition": "The ongoing monitoring of a drug or medical device's safety and effectiveness after it has been approved and marketed, identifying rare adverse events and long-term effects not detected in clinical trials."
+        },
+        {
+          "term": "meaningful patterns",
+          "definition": "Statistically significant trends, correlations, or relationships discovered through data analysis that provide actionable insights for decision-making in drug development, patient care, or business operations."
+        }
+      ]
     }
   ]
 }
